@@ -1,3 +1,503 @@
 First line
 Second line
 
+   62  cd ..
+   63  cd ..
+   64  mkdir 20feb
+   65  cd 20feb
+   66  mkdir folder_1
+   67  mkdir folder_2
+   68  cd folder_2
+   69  mkdir task1
+   70  mkdir task1.1
+   71  cd task1
+   72  vi avg.c
+   73  git init
+   74  vi avg.c
+   75  git add .
+   76  git commit --m "Take three numbers as input from users"
+   77  vi avg.c
+   78  git add .
+   79  git commit --m "Store the average of these numbers in variable named avg"
+   80  vi avg.c
+   81  git add .
+   82  git commit --m "Print the average of these three numbers"
+   83  vi avg.c
+   84  git add .
+   85  git commit --m "Print the result upto two decimal places"
+   86  cd ..
+   87  cd task1.1
+   88  git init
+   89  vi patterns.c
+   90  git add .
+   91  git commit --m "Take number of rows and columns as input from users"
+   92  vi patterns.c
+   93  git branch pattern1
+   94  git branch pattern_rev
+   95  git branch
+   96  git checkout branch1
+   97  git branch
+   98  git checkout pattern1
+   99  git branch
+  100  vi patterns.c
+  101  git add .
+  102  git commit --m "Print the star pattern"
+  103  git log --oneline
+  104  vi patterns.c
+  105  git add .
+  106  git commit --m "Added a comment"
+  107  git log --oneline
+  108  git checkout pattern_rev
+  109  git branch
+  110  pwd
+  111  vi patterns.c
+  112  git add .
+  113  git commit --m "Print the inverted star pattern"
+  114  vi patterns.c
+  115  git add .
+  116  git commit --m "Added a comment for inverse loop"
+  117  git log --oneline
+  118  git status
+  119  cd ..
+  120  cd task1
+  121  pwd
+  122  git remote add origin https://github.com/DiyaS23/task1_diya.git
+  123  git remote
+  124  git push -u origin master
+  125  cd ..
+  126  pwd
+  127  cd task1.1
+  128  git checkout master
+  129  git branch
+  130  git remote add origin https://github.com/DiyaS23/task1.1_diya.git
+  131  git remote
+  132  git remote add origin1.1 https://github.com/DiyaS23/task1.1_diya.git
+  133  git remote
+  134  git push -u origin1.1 master
+  135  git checkout pattern1
+  136  git branch
+  137  git push -u origin1.1 pattern1
+  138  git checkout pattern_rev
+  139  git branch
+  140  git push -u origin1.1 pattern_rev
+  141  clear
+  142  pwd
+  143  cd ..
+  144  cd ..
+  145  mkdir 21feb
+  146  cd 21feb
+  147  git status
+  148  git init
+  149  vi hello.txt
+  150  cat hello.txt
+  151  vi hello.c
+  152  cat hello.c
+  153  git status
+  154  git add .
+  155  git status
+  156  git commit -m "Commit on master branch"
+  157  vi hello.txt
+  158  git status
+  159  git add hello.txt
+  160  git status
+  161  git commit -m "Added another line"
+  162  git log--oneline
+  163  git log --oneline
+  164  vi hello.c
+  165  git status
+  166  git add hello.c
+  167  git commit -m "Added another print statement in C file"
+  168  git log --oneline
+  169  git branch test
+  170  git checkout test
+  171  cat hello.c
+  172  vi hello.c
+  173  git add hello.c
+  174  git commit -m "Added If else statements for odd even number"
+  175  git log --oneline
+  176  cat hello.c
+  177  git checkout master
+  178  cat hello.c
+  179  git branch dev
+  180  git checkout dev
+  181  cat hello.c
+  182  cat hello.txt
+  183  git log --oneline
+  184  vi hello.c
+  185  git status
+  186  git add hello.c
+  187  git commit -m "Print the sum of two numbers which are already defined"
+  188  cat hello.c
+  189  git checkout master
+  190  vi .gitignore
+  191  git commit -a -m "gitignore initiated"
+  192  git add .
+  193  git commit -a -m "gitignore initiated"
+  194  vi hello.py
+  195  git status
+  196  mkdir ignored
+  197  cd ignored
+  198  pwd
+  199  vi .gitignore
+  200  git commit -a -m "gitignore initiated1.1"
+  201  git add .
+  202  git commit -a -m "gitignore initiated1.1"
+  203  git add panda.png
+  204  touch panda.png
+  205  git status
+  206  touch panda.png
+  207  git add panda.png
+  208  git status
+  209  vi .gitignore
+  210  git commit -a -m "gitignore initiated1.2"
+  211  git add .
+  212  git commit -a -m "gitignore initiated1.2"
+  213  vi hello.docx
+  214  git status
+  215  clear
+  216  cd ..
+  217  cd ..
+  218  mkdir 23feb
+  219  cd 23feb/
+  220  git init
+  221  vi new.txt
+  222  git add .
+  223  git commit -m "First commit|master branch"
+  224  vi new.txt
+  225  git add .
+  226  git commit -m "Second commit|master branch"
+  227  git log --oneline
+  228  git branch dev1
+  229  git branch
+  230  git checkout dev1
+  231  cat new.txt
+  232  vi new.txt
+  233  git add .
+  234  git commit -m "First commit|dev1 branch"
+  235  git log --oneline
+  236  vi new.txt
+  237  git add .
+  238  git commit -m "Second commit|dev1 branch"
+  239  git log --oneline
+  240  cat new.txt
+  241  git checkout master
+  242  cat new.txt
+  243  git checkout dev1
+  244  git branch dev2
+  245  git checkout dev2
+  246  git log --oneline
+  247  vi new.txt
+  248  git add .
+  249  git commit -m "First commit|dev2 branch only line 5 is added"
+  250  cat new.txt
+  251  git checkout dev1
+  252  git merge dev2 dev1
+  253  git status
+  254  git log --oneline
+  255  git checkout master
+  256  git log --oneline
+  257  vi new.txt
+  258  git add .
+  259  git commit -m "Third commit|master branch|line 3 added"
+  260  git log --oneline
+  261  git checkout dev2
+  262  git merge master dev2
+  263  git mergetool
+  264  git status
+  265  git add .
+  266  git commit -m "Conflict resolved|merging now for test server"
+  267  git log --oneline
+  268  clear
+  269  cd ..
+  270  clear
+  271  mkdir practice_23feb
+  272  cd practice_23feb/
+  273  git init
+  274  vi calculator.c
+  275  git add .
+  276  git commit -m "Take input of operator from user and store it in op"
+  277  vi calculator.c
+  278  git add .
+  279  git commit -m "Added some info about & operator"
+  280  git log --oneline
+  281  git branch case1_2
+  282  git checkout case1_2
+  283  vi calculator.c
+  284  vi calculator.c
+  285  git checkout master
+  286  vi calculator.c
+  287  git checkout case1_2
+  288  vi calculator.c
+  289  git add .
+  290  git commit -m "Added sum and sub cases"
+  291  git log --oneline
+  292  git checkout master
+  293  git branch case3_4
+  294  git checkout case3_4
+  295  vi calculator.c
+  296  git checkout case1_2
+  297  git branch case3__4
+  298  vi calculator.c
+  299  git add .
+  300  git commit -m "Added product case"
+  301  vi calculator.c
+  302  git add .
+  303  git commit -m "Added division case"
+  304  git log --oneline
+  305  git merge case1_2 case3__4
+  306  git merge case3__4 case1_2
+  307  clear
+  308  cd ..
+  309  cd ..
+  310  practical_24feb
+  311  mkdir practical_24feb
+  312  cd practical_24feb/
+  313  git init
+  314  vi calcultorr.c
+  315  git add .
+  316  git commit -m "Take two number a and b as input"
+  317  vi calcultorr.c
+  318  git add .
+  319  git commit -m "Take operatorr as input to work on a and b"
+  320  git branch case_I
+  321  git checkout case_I
+  322  vi calcultorr.c
+  323  git add .
+  324  git commit -m "Write case for addition using switch case"
+  325  vi calcultorr.c
+  326  git add .
+  327  git commit -m "Write case for subtraction using switch case"
+  328  git branch case_II
+  329  git checkout case_II
+  330  vi calcultorr.c
+  331  git add .
+  332  git commit -m "Write case for multiplication using switch case|case_II"
+  333  vi calcultorr.c
+  334  git add .
+  335  git commit -m "Write case for division using switch case|case_II"
+  336  git log --oneline
+  337  git checkout case_I
+  338  git merge case_II case_I
+  339  cat calculatorr.c
+  340  cat calcultorr.c
+  341  git checkout master
+  342  vi calcultorr.c
+  343  git add .
+  344  git commit -m "Added math.h header file|master"
+  345  git log --oneline
+  346  git checkout case_I
+  347  git checkout case_II
+  348  git merge master case_II
+  349  git mergetool
+  350  git status
+  351  git add .
+  352  git commit -m "Conflict resolved|removed math.h"
+  353  git log --oneline
+  354  git checkout master
+  355  git remote add oigin https://github.com/DiyaS23/practical_24feb.git
+  356  git remote
+  357  git push -u origin master
+  358  git remote add origin https://github.com/DiyaS23/practical_24feb.git
+  359  git remote
+  360  git push -u origin master
+  361  git checkout case_I
+  362  git push -u origin case_I
+  363  git checkout case_II
+  364  git push -u origin case_II
+  365  clear
+  366  cd ..
+  367  cd ..
+  368  cd 23feb
+  369  git checkout master
+  370  git ls
+  371  ls
+  372  cat new.txt
+  373  git remote add origin https://github.com/DiyaS23/23feb.git
+  374  git remote
+  375  git push -u origin master
+  376  git checkout dev1
+  377  git push -u origin dev1
+  378  cd ,,
+  379  cd c
+  380  cd ..
+  381  mkdir cloned_repo
+  382  cd cloned_repo
+  383  pwd
+  384  git status
+  385  git clone https://github.com/MonitKapoor/23feb
+  386  git branch
+  387  git clone https://github.com/MonitKapoor/23feb
+  388  git branch dev1
+  389  git init
+  390  ls
+  391  .git
+  392  ls -a
+  393  cat hello.txt
+  394  cd 23feb
+  395  cat hello.txt
+  396  git branch dev1
+  397  git checkout dev1
+  398  cd ..
+  399  cd ..
+  400  mkdir clonedrepo
+  401  cd clonedrepo
+  402  git clone https://github.com/MonitKapoor/23feb
+  403  cd 23feb
+  404  cat hello.txt
+  405  git branch
+  406  git branch dev1
+  407  git checkout dev1
+  408  git pull
+  409  cd ..
+  410  cd ..
+  411  mkdir clone_new
+  412  cd clone_new
+  413  git clone https://github.com/DiyaS23/16hfeb_class
+  414  cd 16hfeb_class
+  415  git branch
+  416  git log
+  417  git log --oneline
+  418  cd ..
+  419  cd ..
+  420  pwd
+  421  mkdir folder1
+  422  mkdir folder2
+  423  cd/folder1/folder2/
+  424  cd folder1
+  425  cd folder2
+  426  cd ..
+  427  cd ..
+  428  mkdir folder_1
+  429  cd folder_1
+  430  cd folder_2
+  431  mkdir folder_@
+  432  cd folder_@
+  433  mkdir mywork
+  434  cd mywork
+  435  pwd
+  436  mkdie img
+  437  mkdir img
+  438  git init
+  439  vi hello.c
+  440  vi hello.txt
+  441  vi hello.html
+  442  touch panda.png
+  443  git add .
+  444  vi hello.c
+  445  vi hello.txt
+  446  vi hello.html
+  447  git commit -m "changes in .c, .html and .txt file"
+  448  git log --oneline
+  449  vi hello.c
+  450  git commit -m "changes in .c file"
+  451  git add hello.c
+  452  git commit -m "changes in .c file"
+  453  git log --oneline
+  454  vi hello.txt
+  455  vi hello.html
+  456  git add .
+  457  git commit -m "changes in .txt and .html file"
+  458  git log --oneline
+  459  git remote add origin https://github.com/DiyaS23/mywork.git
+  460  git push -u origin master
+  461  cd img
+  462  vi .gitignore
+  463  vi .gitignore
+  464  git add .
+  465  git commit -m ".c and .txt files ignored"
+  466  git log --oneline
+  467  vi hello.c
+  468  git status
+  469  cp -r mywork/. img/
+  470  ls
+  471  cd ..
+  472  ls
+  473  cp -r mywork/. img/
+  474  cp -r * img/
+  475  cp -r mywork/. img/
+  476  cd img
+  477  ls
+  478  vi hello.c
+  479  vi hello.c
+  480  vi hello.html
+  481  vi hello.txt
+  482  git add .
+  483  git commit -m "changes in img folder"
+  484  git log --oneline
+  485  cd ..
+  486  cp C:/Users/dell/Pictures/Screenshots/Screenshot 2024-03-05 185815.png/* /c/folder_1/folder_@/mywork/panda.png
+  487  cp "C:/Users/dell/Pictures/Screenshots/Screenshot 2024-03-05 185815.png" "./c folder_1/folder_@/mywork/panda.png"
+  488  cp "C:/Users/dell/Pictures/Screenshots/Screenshot 2024-03-05 185815.png" "./c\folder_1/folder_@/mywork/panda.png"
+  489  cp "C:/Users/dell/Pictures/Screenshots/Screenshot 2024-03-05 185815.png" "./c/folder_1/folder_@/mywork/panda.png"
+  490  git add panda.png
+  491  git commit -m "ss"
+  492  git push -u
+  493  vi panda.png
+  494  history >>log.txt
+  495  vi log.txt
+  496  git add .
+  497  git push -u
+  498  git add log.txt
+  499  git commit -m "history"
+  500  git push -u
+  501  cd ..
+  502  cd ..
+  503  mkdir Assess_0075
+  504  mkdir Assess__0075
+  505  pwd
+  506  cd Assess__0075
+  507  pwd
+  508  mkdir sub_1
+  509  mkdir sub_2
+  510  vi .gitignore
+  511  vit new.html
+  512  vi new.html
+  513  vi new.c
+  514  vi new.txt
+  515  git add .
+  516  clear
+  517  cd ..
+  518  clear
+  519  mkdir assess__0075
+  520  clear
+  521  mkdir assesss_0075
+  522  pwd
+  523  cd asesss_0075
+  524  cd assesss_0075
+  525  pwd
+  526  git init
+  527  mkdir sub_1
+  528  mkdir sub_2
+  529  vi .gitignore
+  530  git add .
+  531  vi new.html
+  532  vi new.c
+  533  vi new.txt
+  534  git add .
+  535  git commit -m "Changes in .txt,.html and .c file"
+  536  vi new.html
+  537  git add new.html
+  538  git commit -m "Changes in .html file"
+  539  git add new.c
+  540  vi new.c
+  541  git add new.c
+  542  git commit -m "Changes in .c file"
+  543  git log --oneline
+  544  cp -r assesss_0075/. sub_1
+  545  cp -r assesss_0/.  sub_1/
+  546  cp -r * sub_1/
+  547  cp -r * sub_2/
+  548  cd sun_1
+  549  cd sub_1
+  550  ls
+  551  vi new.txt
+  552  git add new.txt
+  553  git add -f new.txt
+  554  git commit -m "Changes in .txt file in usub_1"
+  555  cd ..
+  556  cd sub_2
+  557  touch image
+  558  cp -r "C:\Users\dell\Pictures\Screenshots\Screenshot 2024-03-06 113157.png" "/c/assesss_0075/sub_2/image"
+  559  cd ..
+  560  cd sub_1
+  561  history >>new.txt
